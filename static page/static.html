@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script type="text/javascript" src='jquery-3.2.1.min.js'></script>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>ANZ Personal Banking</title>
 	<link rel="stylesheet" type="text/css" href="css/static.css">
+
 </head>
 <body>
 	<div class="main">
 		<div class="top">
-			<div class="nav">
+			<div class="nav" >
 				<img class="logo" src="img/logo-anz.svg">
-				<ul>
+				<ul id="nav">
 					<li>
 						<a href="javascript:;">
 							Personal
@@ -66,12 +69,21 @@
 				</a>
 				<p>Subject to ANZ's credit assessment criteria. Terms and condition apply.</p>
 			</div>
-			<div class="logon">
-				<div class="banking">
+			<div class="logon" id='logonbox'>
+				<div class="banking"'>
 					<span>
-						Internet Banking
+						<i>Internet Banking</i>
+						<ul class="hidden">
+							<li>Internet Banking</li>
+							<li>ANZ share Investing </li>
+							<li>ANZ self Managed Super</li>
+							<li>ANZ Access</li>
+							<li>My portfolo</li>
+						</ul>
 					</span>
-					<em></em>
+					<em>
+						<img src="img/downarrow.png">
+					</em>
 				</div>
 				<div id="button_Logon">
 					Log on
@@ -95,15 +107,33 @@
 				</ul>	
 				<div class="calculator">
 					<span>
-						Calculator & tools
+						<i>Calculator & tools</i>
+						<ul class="hidden">
+							<li>Internet Banking</li>
+							<li>ANZ share Investing </li>
+							<li>ANZ self Managed Super</li>
+							<li>ANZ Access</li>
+							<li>My portfolo</li>
+						</ul>
 					</span>
-					<em></em>
+					<em>
+						<img src="img/downarrow.png">
+					</em>
 				</div>
 				<div>
 					<span>
-						Apply for
+						<i>Apply for</i>
+						<ul class="hidden">
+							<li>Internet Banking</li>
+							<li>ANZ share Investing </li>
+							<li>ANZ self Managed Super</li>
+							<li>ANZ Access</li>
+							<li>My portfolo</li>
+						</ul>
 					</span>
-					<em></em>
+					<em>
+						<img src="img/downarrow.png">
+					</em>
 				</div>
 			</div>
 		</div>
@@ -252,5 +282,6 @@
 			
 		</div>
 	</div>
+	<script type="text/javascript" src="js/static.js"></script>
 </body>
 </html>

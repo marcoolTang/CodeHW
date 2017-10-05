@@ -5,6 +5,7 @@ var arr = require('./config/data.js')
 
 app.use(express.static('public'));
 
+// respond  when a GET request is made to the homepage
 app.get('/',function(req,res){
 	
 })

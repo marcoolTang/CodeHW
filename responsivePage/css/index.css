@@ -1,0 +1,124 @@
+/*公共部分 固定样式*/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width: 100%;
+
+}
+.header .navga{
+	display: none;
+}
+.header{
+	height: 150px;
+	width: 100%;
+	position: relative;
+	background: url(../images/header.png) #474747;
+}
+.shadow{
+	background: url(../images/oblique-lines.png);
+	height: 8px;
+}
+
+.header img{
+	display: block;
+}
+.header a:hover{
+	border-bottom: 5px solid white;
+}
+.header ul li{
+		float: left;
+		margin-right: 20px;
+
+		
+	}
+
+.header  li a{
+		display: block;
+		color: white;
+		font-size: 12px;
+		height: 23px;
+		
+	}
+
+/*PC端 主要针对结构和尺寸 1151px*/
+@media screen and (min-width: 1151px) {
+	.header>ul{
+		top:122px;
+		width: 943px;
+		position: absolute;
+		left: 50%;
+		margin-left: -472px;
+	}
+	.header .logo{
+		top:42px;
+		width: 943px;
+		position: absolute;
+		left: 50%;
+		margin-left: -472px;
+		height: 50px;
+	}
+
+}
+
+/*ipad 751px 1151px*/
+@media screen and (min-width: 751px) and (max-width: 1151px) {
+	.header>ul{
+		top:122px;
+		width: 715px;
+		position: absolute;
+		left: 50%;
+		margin-left: -358px;
+	}
+	.header .logo{
+		top:42px;
+		width: 715px;
+		position: absolute;
+		left: 50%;
+		margin-left: -358px;
+	}
+	
+}
+/*手机端 750px*/
+
+@media screen and (max-width: 750px) {
+	.header{
+		height: 5.25rem;
+		background-size: auto 5.275rem;
+	}
+	.header ul{
+		display: none;
+	}
+	.header img{
+		display: block;
+		width: 2.075rem;
+		height: 1.125rem;
+	}
+	.header .logo{
+		top:1.05rem;
+		width: 10.975rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -5.4875rem;
+
+	}
+	.header .navga{
+		display: block;
+		width: 10.925rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -5.4625rem;
+		top:4.025rem;
+
+	}
+	.header .navga select{
+		display: block;
+		width: 10.925rem;
+	}
+
+}
